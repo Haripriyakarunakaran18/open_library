@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>API Documentation – Open Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="api-docs.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="api-header">
+  <h1>API Documentation</h1>
+  <p>Access Open Library data programmatically</p>
+</header>
+
+<!-- CONTENT -->
+<main class="api-container">
+
+  <section class="api-card">
+    <h2>📘 Introduction</h2>
+    <p>
+      The Open Library API provides access to millions of books, authors,
+      subjects, and covers. It is free to use and requires no authentication
+      for basic requests.
+    </p>
+  </section>
+
+  <section class="api-card">
+    <h2>🔑 Base URL</h2>
+    <pre>
+https://openlibrary.org/
+    </pre>
+  </section>
+
+  <section class="api-card">
+    <h2>🔍 Search API</h2>
+    <p>Search books by title, author, or subject.</p>
+    <pre>
+GET /search.json?q=harry+potter
+    </pre>
+  </section>
+
+  <section class="api-card">
+    <h2>📚 Books API</h2>
+    <p>Retrieve detailed book information using ISBN.</p>
+    <pre>
+GET /isbn/9780140328721.json
+    </pre>
+  </section>
+
+  <section class="api-card">
+    <h2>✍️ Authors API</h2>
+    <p>Fetch author details and related works.</p>
+    <pre>
+GET /authors/OL23919A.json
+    </pre>
+  </section>
+
+  <section class="api-card">
+    <h2>🖼 Covers API</h2>
+    <p>Get book cover images.</p>
+    <pre>
+https://covers.openlibrary.org/b/isbn/9780140328721-L.jpg
+    </pre>
+  </section>
+
+  <section class="api-card">
+    <h2>⚠️ Usage Guidelines</h2>
+    <ul>
+      <li>Use caching to reduce repeated requests</li>
+      <li>Do not overload the servers</li>
+      <li>Credit Open Library when using data</li>
+    </ul>
+  </section>
+
+  <section class="api-card highlight">
+    <h2>🚀 Get Started</h2>
+    <p>
+      Explore the APIs, build applications, and help readers discover books
+      through technology.
+    </p>
+    <a href="developer.html" class="back-btn">← Back to Developer Center</a>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="api-footer">
+  <p>© 2025 Open Book Library</p>
+</footer>
+
+</body>
+</html>

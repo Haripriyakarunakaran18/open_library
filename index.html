@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- MENU TOGGLE -->
+  <input type="checkbox" id="menu-toggle">
+
+  <!-- DARK OVERLAY -->
+  <div class="menu-overlay"></div>
+
+  <!-- HEADER -->
+  <header class="header">
+  <div class="header-left">
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <span class="header-title">Open Library</span>
+  </div>
+
+     <!-- CENTER SEARCH -->
+  <div class="header-search">
+  <div class="search-box">
+    <img src="images/barcode.jpg" alt="Barcode" class="search-icon left">
+    <input type="text" placeholder="Search books, authors, subjects...">
+    <img src="images/search.png" alt="Search" class="search-icon right">
+  </div>
+</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Browse</a>
+      <a href="#">My Books</a>
+      <a href="login.html" class="login-btn">Log In</a>
+      <a href="signup.html" class="signup-btn">Sign Up</a>
+      <label for="menu-toggle">
+        <img src="images/menu.png" alt="Menu" class="header-icon">
+      </label>
+
+
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Discover Books You'll Love 📚</h2>
+    <p>Read, explore and organize your favorite books</p>
+  </section>
+
+  <!-- BOOK SECTIONS -->
+  <main>
+<!-- TRENDING -->
+<section class="book-section trending">
+  <h3>Trending Books</h3>
+
+  <!-- RADIO CONTROLS -->
+  <input type="radio" name="trending" id="t1" checked>
+  <input type="radio" name="trending" id="t2">
+  <input type="radio" name="trending" id="t3">
+  <input type="radio" name="trending" id="t4">
+  <input type="radio" name="trending" id="t5">
+
+  <div class="carousel trending-carousel">
+    <div class="track">
+      <!-- 10 books -->
+      <div class="book-card"><img src="book1.jpg"><a href="https://www.vliz.be/docs/Zeecijfers/Origin_of_Species.pdf" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book2.jpg"><a href="https://www.goodreads.com/book/show/2657.To_Kill_a_Mockingbird" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="images/book3.jpg"><a href="https://hazidesaratcollege.ac.in/library/uploads/85jkr_harrypotter_1.pdf" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book4.jpg"><a href="https://www.goodreads.com/book/show/78975.Twelve_Red_Herrings" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book5.jpg"><a href="https://www.glscott.org/uploads/2/1/3/3/21330938/aqwf-book_20size.pdf" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book6.jpg"><a href="https://kvongcmehsanalibrary.wordpress.com/wp-content/uploads/2021/07/harrypotter.pdf" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book7.jpg"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book8.jpg"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book9.jpg"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book10.jpg"><a href="#" class="read-btn">Read</a></div>
+    </div>
+
+    <div class="arrows">
+      <label for="t1" class="prev">&#10094;</label>
+      <label for="t2" class="next">&#10095;</label>
+    </div>
+  </div>
+</section>
+
+
+    <!-- CLASSIC -->
+   <section class="book-section classic">
+  <h3>Classic Books</h3>
+
+  <input type="radio" name="classic" id="c1" checked>
+  <input type="radio" name="classic" id="c2">
+  <input type="radio" name="classic" id="c3">
+  <input type="radio" name="classic" id="c4">
+  <input type="radio" name="classic" id="c5">
+
+  <div class="carousel classic-carousel">
+    <div class="track">
+      <div class="book-card"><img src="book11.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book12.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book13.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book14.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book15.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book16.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book17.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book18.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book19.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book20.webp"><a href="#" class="read-btn">Read</a></div>
+    </div>
+
+    <div class="arrows">
+      <label for="c1" class="prev">&#10094;</label>
+      <label for="c2" class="next">&#10095;</label>
+    </div>
+  </div>
+</section>
+
+
+    <!-- BOOKS WE LOVE -->
+    <section class="book-section love">
+  <h3>Books We Love </h3>
+
+  <input type="radio" name="love" id="l1" checked>
+  <input type="radio" name="love" id="l2">
+  <input type="radio" name="love" id="l3">
+
+  <div class="carousel">
+    <div class="track">
+      <div class="book-card"><img src="book3.jpg"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book4.jpg"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book5.jpg"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book1.jpg"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book12.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book15.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book13.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book9.jpg"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book18.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book11.jpg"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book19.jpg"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book17.jpg"><a href="#" class="read-btn">Read</a></div>
+    </div>
+
+    <div class="arrows">
+      <label for="l1" class="prev">&#10094;</label>
+      <label for="l2" class="next">&#10095;</label>
+    </div>
+  </div>
+</section>
+
+
+    <!-- ROMANCE -->
+    <section class="book-section romance">
+  <h3>Romance</h3>
+
+  <input type="radio" name="romance" id="r1" checked>
+  <input type="radio" name="romance" id="r2">
+
+  <div class="carousel">
+    <div class="track">
+      <div class="book-card"><img src="book21.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book22.webp"><a href="#" class="read-btn">Read</a></div>
+       <div class="book-card"><img src="book23.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book24.webp"><a href="#" class="read-btn">Read</a></div>
+       <div class="book-card"><img src="book25.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book26.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book27.webp"><a href="#" class="read-btn">Read</a></div>
+     <div class="book-card"><img src="book30.webp"><a href="#" class="read-btn">Read</a></div>
+     <div class="book-card"><img src="book29.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book30.webp"><a href="#" class="read-btn">Read</a></div>
+     <div class="book-card"><img src="book31.webp"><a href="#" class="read-btn">Read</a></div>
+     
+    </div>
+
+    <div class="arrows">
+      <label for="r1" class="prev">&#10094;</label>
+      <label for="r2" class="next">&#10095;</label>
+    </div>
+  </div>
+</section>
+
+
+    <!-- KIDS -->
+    <section class="book-section kids">
+  <h3>Kids</h3>
+
+  <input type="radio" name="kids" id="k1" checked>
+  <input type="radio" name="kids" id="k2">
+
+  <div class="carousel">
+    <div class="track">
+      <div class="book-card"><img src="book3.jpg"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book4.jpg"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book24.webp"><a href="#" class="read-btn">Read</a></div>
+       <div class="book-card"><img src="book25.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book26.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book27.webp"><a href="#" class="read-btn">Read</a></div>
+     <div class="book-card"><img src="book30.webp"><a href="#" class="read-btn">Read</a></div>
+     <div class="book-card"><img src="book29.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book30.webp"><a href="#" class="read-btn">Read</a></div>
+     <div class="book-card"><img src="book31.webp"><a href="#" class="read-btn">Read</a></div>
+    </div>
+
+    <div class="arrows">
+      <label for="k1" class="prev">&#10094;</label>
+      <label for="k2" class="next">&#10095;</label>
+    </div>
+  </div>
+</section>
+
+
+    <!-- THRILLER -->
+   <section class="book-section thriller">
+  <h3>Thriller</h3>
+
+  <input type="radio" name="thriller" id="t1x" checked>
+  <input type="radio" name="thriller" id="t2x">
+
+  <div class="carousel">
+    <div class="track">
+      <div class="book-card"><img src="book5.jpg"><a href="https://www.raio.org/TKMFullText.pdf" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book1.jpg"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book24.webp"><a href="#" class="read-btn">Read</a></div>
+       <div class="book-card"><img src="book20.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book26.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book27.webp"><a href="#" class="read-btn">Read</a></div>
+     <div class="book-card"><img src="book30.webp"><a href="#" class="read-btn">Read</a></div>
+     <div class="book-card"><img src="book29.webp"><a href="#" class="read-btn">Read</a></div>
+      <div class="book-card"><img src="book30.webp"><a href="#" class="read-btn">Read</a></div>
+     <div class="book-card"><img src="book31.webp"><a href="#" class="read-btn">Read</a></div>
+    </div>
+
+    <div class="arrows">
+      <label for="t1x" class="prev">&#10094;</label>
+      <label for="t2x" class="next">&#10095;</label>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h4>Open Library</h4>
+        <a href="vision.html">Vision</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="partner.html">Partner With Us</a>
+      </div>
+
+      <div>
+        <h4>Discover</h4>
+        <a href="#">Home</a>
+        <a href="#">Books</a>
+        <a href="#">Authors</a>
+      </div>
+
+      <div>
+        <h4>Develop</h4>
+        <a href="developer.html">Developer Center</a>
+        <a href="api-docs.html">API Documentation</a>
+        <a href="bulk-data.html">Bulk Data</a>
+      </div>
+
+      <div>
+        <h4>Help</h4>
+        <a href="help-center.html">Help Center</a>
+        <a href="contact-us.htm;">Contact Us</a>
+        <a href="suggest-edits.html">Suggest Edits</a>
+      </div>
+    </div>
+
+    <p class="footer-copy">© 2025 Open Book Library</p>
+  </footer>
+
+  <!-- RIGHT SIDEBAR -->
+<aside class="sidebar sidebar-right">
+  <h2 class="sidebar-title">My Open Library</h2>
+
+  <nav class="menu-links">
+    <a href="browse.html">Browse</a>
+    <a href="subject.html">Subjects</a>
+    <a href="trending.html">Trending</a>
+    <a href="library_explorer.html">Library Explorer</a>
+
+    <hr>
+
+    <a href="add_book.html">Add a Book</a>
+    <a href="community_edits.html">Community Edits</a>
+
+    <hr>
+
+    <a href="help_support.html">Help & Support</a>
+    <a href="developer_center.html">Developer Center</a>
+  </nav>
+</aside>
+
+</body>
+</html>
